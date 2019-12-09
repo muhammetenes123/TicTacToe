@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="TicTacToe.js"></script>
+	<style type="text/css">
+		
+		@-webkit-keyframes mymove {
+  from {border-color:#FF0000 ;}
+  to {border-color:	#00FF00;}
+}
+		table,td{
+			-webkit-animation: mymove 5s infinite; 
+             animation: mymove 5s infinite;
+		}
+		a:link {
+			color: green;
+			text-decoration: none;
+		}
+		.Kare{
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			font-size: 20pt;
+			font-weight: bold;
+		}
+	</style>
+
+	<title>TicTacToe</title>
+</head>
+<body onload="OyunaBaşla();">
+	<div id="myDIV"></div>
+	<h1 align="center" style="color:red;">TicTacToe</h1>
+<div id ="mesaj" >
+	Mesaj Burda Gözükecek
+	</div>
+<table style="width: 25%" border="10">
+	<tr>
+		<td id="s1" class = "Kare" onclick = "nextMove(this);"></td>
+		<td id="s2" class = "Kare"onclick = "nextMove(this);" ></td>
+		<td id="s3" class = "Kare" onclick = "nextMove(this);"></td>
+	</tr>
+	<tr>
+		<td id="s4" class = "Kare" onclick = "nextMove(this);"></td>
+		<td id="s5" class = "Kare"onclick = "nextMove(this);" ></td>
+		<td id="s6" class = "Kare" onclick = "nextMove(this);"></td>
+	</tr>
+	<tr>
+		<td id="s7" class = "Kare" onclick = "nextMove(this);"></td>
+		<td id="s8" class = "Kare"onclick = "nextMove(this);" ></td>
+		<td id="s9" class = "Kare" onclick = "nextMove(this);"></td>
+	</tr>
+</table><br>
+<a href = "javascript:OyunaBaşla();">Tekrar Oyna </a>
+</body>
+</html>
